@@ -1,0 +1,125 @@
+/* Importamos la tipografía desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+/* Estilos globales */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    line-height: 1.6;
+}
+
+/* Hero (Cabecera con imagen de fondo) */
+.hero {
+    background: url('../img/header_background.jpeg') no-repeat center center/cover;
+    width: 100%;
+    height: 100vh; /* Ocupa el 100% de la altura de la pantalla */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h1 {
+    color: #ffffff;
+    font-size: 2rem;
+    max-width: 80%;
+}
+
+/* Contenedor principal */
+.content {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+/* Estilos para títulos */
+h2, h3 {
+    color: #000000;
+}
+
+/* Texto destacado */
+.highlight {
+    color: #ff0000;
+}
+
+/* Contenedor de video responsivo */
+.video-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 315px;
+    max-width: 560px;
+}
+
+/* Estilos para imágenes */
+img {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+/* Estilos para enlaces */
+a {
+    color: #ff0000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    background: #000000;
+}
+
+/* Media Query para pantallas pequeñas  */
+@media screen and (max-width: 768px) {
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .content {
+        width: 90%;
+    }
+
+    h2, h3 {
+        font-size: 1.2rem;
+    }
+}
+
+
+/* Reparto   */
+    .table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+    .table th, .table td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: left;
+    }
+    .table img {
+        width: 100px;
+        border-radius: 20px;
+        /* Carrusel de peliculas  */
+    }
+    .carousel-section {
+        margin-top: 60px;
+        text-align: center;
+    }
+    .carousel img {
+        height: 100%;
+        object-fit: center;
+        border-radius: 10px;
+    }
